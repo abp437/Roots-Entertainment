@@ -1,63 +1,46 @@
-/* Carousel */
+.carousel-indicators{
+bottom: 0;
+}
+.carousel{
+margin-bottom: 20px;
+}
+#tcb-testimonial-carousel a{
+        color: #b20000;
+    }
+#tcb-testimonial-carousel  .text-brand{
+        color:#b20000;
+    }
+#tcb-testimonial-carousel .carousel-indicators .active {
+        background:#b20000;
+    }
+#tcb-testimonial-carousel .no-margin{
+        margin: 0;
+    }
+#tcb-testimonial-carousel .carousel-indicators li {
+        border: 1px solid #ccc;
+    }
+#tcb-testimonial-carousel .carousel-control {
+        color: #b20000;
+        width: 5%;
+    }
+#tcb-testimonial-carousel .carousel-control:hover,
+#tcb-testimonial-carousel .carousel-control:focus {
+        color: #b20000;
+    }
+#tcb-testimonial-carousel .carousel-control.left,
+#tcb-testimonial-carousel .carousel-control.right {
+        background-image: none;
+    }
+#tcb-testimonial-carousel .item{
+        padding: 15px 40px;
+        background: #f8f8f8;
+    }
+#tcb-testimonial-carousel .media-object {
+        margin: auto;
+    }
+    @media screen and (max-width: 768px) {
+        .media-object {
+            margin-bottom: 15px;
+        }
+    }
 
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 30px;
-    /* Control buttons  */
-    /* Previous button  */
-    /* Next button  */
-    /* Changes the position of the indicators */
-    /* Changes the color of the indicators */
-}
-#quote-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
-}
-#quote-carousel .carousel-control.left {
-    left: -60px;
-}
-#quote-carousel .carousel-control.right {
-    right: -60px;
-}
-#quote-carousel .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-right: -19px;
-}
-#quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    cursor: pointer;
-    border: 4px solid #CCC;
-    border-radius: 50px;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all 0.4s;
-}
-#quote-carousel .carousel-indicators .active {
-    background: #333333;
-    width: 128px;
-    height: 128px;
-    border-radius: 100px;
-    border-color: #f33;
-    opacity: 1;
-    overflow: hidden;
-}
-.carousel-inner {
-    min-height: 300px;
-}
-.item blockquote {
-    border-left: none;
-    margin: 0;
-}
-.item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
-}
