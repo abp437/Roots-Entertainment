@@ -6,6 +6,9 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 .eventGallery a{
 display: block;
 }
+.eventGallery img{
+width: 100%;
+}
 .eventInfo{
 padding: 20px;
 text-align: center;
