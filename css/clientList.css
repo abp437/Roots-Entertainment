@@ -1,0 +1,9 @@
+.clientList {
+	text-align: center;
+	margin: 50px 0px;
+}
+
+.clientList img{
+	margin: 20px;
+	width: 75px;
+}
