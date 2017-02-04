@@ -12,10 +12,24 @@ a, a:hover {
 }
 
 .headding {
-	margin-top: 30px;
+	padding: 40px;
 	font-family: 'Boogaloo', cursive;
     font-size: 48px;
     text-align: center;
+}
+
+.headdingMarginal {
+	margin-top: 100px;
+}
+
+.elementDisabled {
+	cursor: default;
+	pointer-events: none;
+}
+
+.zIndexer {
+	z-index: 1500;
+	position: relative;
 }
 
 /* ----------- HEADER SECTION ----------- */
@@ -28,7 +42,7 @@ a, a:hover {
 	background-color: transparent;
 	border: none;
 	margin-bottom: 0px;
-	z-index: 1;
+	z-index: 2000;
 	color: #FFFFFF;
 }
 
@@ -289,6 +303,10 @@ a, a:hover {
 
 @media only screen and (max-width: 767px) {
 
+	.headdingMarginal {
+		margin-top: 65px;
+	}
+
 	/* ----------- HEADER SECTION ----------- */
 
 	.logoWrapper {
@@ -357,10 +375,9 @@ a, a:hover {
 		border-color:transparent;
 	}
 
-
 	.headerMenuActive nav{
 		background-color: #000 !important;
-		z-index: 100;
+		z-index: 2000;
 		overflow: hidden;
 		height:100%;
 	}
@@ -411,6 +428,12 @@ a, a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+	.headdingMarginal {
+		max-width: 320px;
+		margin: 0px auto;
+		margin-top: 65px;
+	}
+
 	.contactDescription p {
 		width: 80%;
 		font-size: 15px;

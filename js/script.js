@@ -180,8 +180,41 @@ $('.zoom').zoom();
 
 });
 
+//  ---------------- BACKGROUND VIDEO FUNCTION ---------------- //
+
+var  weboCommanMethod = function(){	
+	this.setWindowHeight= function (ele){
+		var wHt = $(window).outerHeight(true);
+		$(ele).css("height",wHt);
+		if(ele == ".videoWrap"){
+			$(ele).find(".dispTable").css("height",wHt);
+		}		
+	}
+}	
+
+var setVideoSize = function (){
+	var $window = $(window),
+		windowWidth = $window.width(),
+		windowHeight = $window.height(),
+		$videoWrap = $(".homepage-video");
+	if($videoWrap.height() <= windowHeight && $videoWrap.width() >= windowWidth){
+		$videoWrap.css("height","100%");
+		$videoWrap.css("width","auto");
+	}else
+	{
+		$videoWrap.css("height","auto");
+		$videoWrap.css("width","100%");
+	}
+	var overflowHt = $videoWrap.height()-windowHeight
+	var overflowWt = $videoWrap.width()-windowWidth
+	if( overflowHt>=0 && overflowWt >=0){
+		$videoWrap.css("margin-left",-overflowWt/2);
+		$videoWrap.css("margin-top",-overflowHt/2);
+	}
+}
 
 
+//  ---------------- BACKGROUND VIDEO FUNCTION ENDS ---------------- //
 
 
 
