@@ -1,0 +1,246 @@
+@import url('headerFooter.css');
+
+.wear li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.wear img {
+	height:328px;
+	/*border:1px solid #ccc;*/
+	width: 100%;
+	border-radius: 5px;
+	/*box-shadow: 0px 1px 0px lightgrey;*/
+}
+
+.wear p {
+	font-size: 18px;
+	color: #337ab7;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.wear img:hover {
+	/*border:1px solid #337ab7;
+	border-radius: 5px;*/
+	/*cursor: pointer;*/
+}
+
+#backtop {
+	position: fixed;
+	left:auto;right: 20px;top:auto;bottom: 20px;
+	outline: none;
+	overflow:hidden;
+	color:#fff;
+	text-align:center;
+	background-color:rgba(49,79,96,0.84);
+	height:40px;
+	width:40px;
+	line-height:40px;
+	font-size:14px;
+	border-radius:5px;
+	cursor:pointer;
+	transition:all 0.3s linear;
+	z-index:1;
+	opacity:1;
+	display:none;
+}
+
+#backtop:hover {
+	background-color:#337ab7;
+}
+
+#backtop.mcOut {
+	opacity:0;
+}
+
+.affix {
+	top: 0px;
+    width: 19.5%;
+}
+.fill{
+	margin-top: 20px;
+}
+
+.wearclass{
+	font-size: 34px;
+	margin: 20px 0px;
+	text-align: center;
+	color: #337ab7;
+	font-weight: 500;
+}
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		.zoom img:hover { cursor: url(images/grab.cur), default; }
+		.zoom img:active { cursor: url(images/grabbed.cur), default; }
+
+/* --------------- MEDIA QUERIES --------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/* ----------- HEADER SECTION ----------- */
+
+	.logoWrapper {
+		float: left;
+		max-height: 70px;
+		width: 100%;
+	}
+
+	.logoImage {
+		height: 70px;
+		width: 100%;
+	}
+
+	.navbar-header.iPadLogo {
+		width: 15%;
+	}
+
+	.navbar-nav>li>a.headerLinks {
+		padding: 0px;
+		margin-left: 10px;
+		line-height: 70px;
+	}
+
+	/* ----------- HEADER SECTION ENDS ----------- */
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+.wear li{
+	width:50%;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+	/* ----------- HEADER SECTION ----------- */
+
+	.logoWrapper {
+		float: left;
+		max-height: 60px;
+		width: 40%;
+	}
+
+	.logoImage {
+		height: 60px;
+		width: 100%;
+	}
+
+	.navbar-toggle.buttonDesign {
+		margin: 0px;
+		margin-top: 16px;
+		margin-right: 15px;
+		border-radius: 0px;
+		padding: 7px 10px;
+	}
+
+	.navbar-nav>li>a.headerLinks {
+		padding: 0px;
+		margin-left: 0px;
+		line-height: 30px;
+	}
+
+	.navbar-nav.collapseMargin {
+		margin: 0px -15px;
+	}
+
+	/* ----------- HEADER SECTION ENDS ----------- */
+
+	.Costume {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		z-index: 1;
+		background:#303030;
+	}
+
+		.Costume li {
+		display:inline-block;
+	}
+
+	.wear li {
+		margin-top:20px;
+	}
+
+	nav {
+		background-color: #303030;
+	}
+
+	.Costume .womens:before {
+		content: /*'❤'*/ url(../images/girl.png);
+		
+	}
+	
+	.Costume .mens:before {
+		content: /*'❤'*/ url(../images/boy.png);
+		
+	}
+	.Costume .kids:before {
+		content: /*'❤'*/ url(../images/baby.png);
+		
+	}
+	.Costume .accessories:before {
+		content: /*'❤'*/ url(../images/mask.png);
+		
+	}
+
+	.affix {
+		top:0px;
+		width: 100%;
+	 }
+
+	.fill{
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-top: 0px;
+	}
+
+	.Costume li span {
+		display: block;
+	}
+
+}
