@@ -170,10 +170,10 @@ var btt = $('.backtotop');
 			}
 	}); 
 
-$('.zoom').zoom();
+	$('.zoom').zoom();
 // 	$('.zoom').zoom({ on:'grab' });
-// 	// $('#ex3').zoom({ on:'click' });			 
-// 	// $('#ex4').zoom({ on:'toggle' });
+	// $('.zoom').zoom({ on:'click' });			 
+// 	// $('.zoom').zoom({ on:'toggle' });
 
 
 
@@ -218,44 +218,3 @@ var setVideoSize = function (){
 
 
 
-
-// $(document).ready(function() {
-	
-// });
-
-
-
-
-// $(document).ready(function() {  
-	
-// });
-
-
-
-// $(document).ready(function(){
-	
-// });
-
-
-// $(document).ready(function() {
-    
-// });
-
-// $(document).ready(function(){
-	
-// });
-
-// $(document).ready(function(){
-// 	// $('.zoom').zoom();
-// 	$('.zoom').zoom({ on:'grab' });
-// 	// $('#ex3').zoom({ on:'click' });			 
-// 	// $('#ex4').zoom({ on:'toggle' });
-// });
-
-
-
-// $(document).ready(function() {
-	
-// });
-
-//  ---------------- BACK TO TOP FUNCTION ENDS ---------------- //
