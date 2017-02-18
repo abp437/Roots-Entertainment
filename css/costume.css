@@ -1,16 +1,14 @@
 @import url("headerFooter.css");
 
 .wear li {
-	list-style-type: none;
-	display: inline-block;
+	margin-bottom: 20px;
+
 }
 
 .wear img {
 	height:328px;
-	/*border:1px solid #ccc;*/
+	border:1px solid #ccc;
 	width: 100%;
-	border-radius: 5px;
-	/*box-shadow: 0px 1px 0px lightgrey;*/
 }
 
 .wear p {
@@ -25,6 +23,11 @@
 	border-radius: 5px;*/
 	/*cursor: pointer;*/
 }
+
+#Kids {
+    margin-top: 120px;
+}
+
 
 #backtop {
 	position: fixed;
@@ -54,13 +57,7 @@
 	opacity:0;
 }
 
-.affix {
-	top: 0px;
-    width: 19.5%;
-}
-.fill{
-	margin-top: 85px;
-}
+
 
 .wearclass{
 	font-size: 34px;
@@ -84,6 +81,21 @@
     display: table;
     clear: both;
 }
+
+
+/*.zoom img:hover { cursor: url(images/grab.cur), default; }
+.zoom img:active { cursor: url(images/grabbed.cur), default; }*/
+/*#gallery_01 img{border:2px solid white;}*/
+ 
+
+ .active img{border:2px solid #333 !important;}
+
+
+
+
+
+
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -191,37 +203,15 @@
 		background-color: #303030;
 	}
 
-	.Costume .womens:before {
-		content: /*'❤'*/ url(../images/girl.png);
-		
-	}
+	#Kids {
+    margin-top: 80px;
+}
+
+
+
+
+
+
 	
-	.Costume .mens:before {
-		content: /*'❤'*/ url(../images/boy.png);
-		
-	}
-	.Costume .kids:before {
-		content: /*'❤'*/ url(../images/baby.png);
-		
-	}
-	.Costume .accessories:before {
-		content: /*'❤'*/ url(../images/mask.png);
-		
-	}
-
-	.affix {
-		top:0px;
-		width: 100%;
-	 }
-
-	.fill{
-		padding-right: 0px;
-		padding-left: 0px;
-		margin-top: 0px;
-	}
-
-	.Costume li span {
-		display: block;
-	}
 
 }

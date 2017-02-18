@@ -33,6 +33,49 @@
 		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/homePage.css">
+
+
+<style type="text/css">
+	.child {
+  width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-image: url("images/.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+
+
+
+
+</style>
+
+
+
+
 	</head>
 
 	<body>
@@ -85,18 +128,6 @@
 				<li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
 
-			<!-- <ol class="carousel-indicators indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active">	
-			<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
-			</li>
-			<li data-target="#myCarousel" data-slide-to="1">
-			<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
-			</li>
-			<li data-target="#myCarousel" data-slide-to="2">
-			<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
-			</li>
-			</ol> -->
-
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<!-- <img src="images/103.jpg" alt="New York"> -->
@@ -125,6 +156,31 @@
 		</div>
 
 		<!-- ============ CAROUSEL ENDS HERE ============ -->
+
+<div class="mainEvents">
+	<div class="container">
+		<div class="row">
+			<div class=" parent col-md-4">
+				<div class="child"></div>
+			</div>
+			<div class="parent col-md-4">
+				<div class="child"></div>
+			</div>
+			<div class="parent col-md-4">
+				<div class="child"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
 
 		<!-- ============ TREE STARTS HERE ============ -->
 

@@ -1,3 +1,8 @@
+.timeLine {
+	z-index: 1500;
+	background-color: #fff;
+}
+
 a.innerRight {
 	background-color: #0a4b5f;
 	color: #fff;
@@ -60,6 +65,7 @@ a.innerRight:hover {
 	font-size: 15px;
 	line-height: 17px;
 	margin: 0;
+	text-transform: uppercase;
 }
 
 .inner span{
@@ -162,6 +168,10 @@ a.innerRight:hover {
 
 	.outer {
 		margin-bottom: 50px;
+	}
+
+	.outer:last-child{
+		margin-bottom: 0px;
 	}
 
 	.inner {
