@@ -1,3 +1,6 @@
+.links {
+	padding: 50px 0;
+}
 .outerDiv{
 padding: 0;
 position: relative;
@@ -6,13 +9,15 @@ position: relative;
 width: 100%;
 display: block;
 }
+
 .outerDiv:hover .overlay{
 display: block;
 }
+
 .overlay{
 display: none;
-height: 252.95px;
-width: 449.66px;
+height: 100%;
+width: 100%;
 top: 0;
 left: 0;
 position: absolute;
@@ -20,25 +25,10 @@ text-align: center;
 background-color: rgba(0,0,0,0.4);
 }
 .overlay a{
-display:inline-block;
-margin-top: 126px;
+position: absolute;
+bottom: 20px;
+right: 30px;
+background-color: #fff;
+padding: 10px;
 font-size: 20px;
-}
-@media (min-width: 768px) and (max-width: 1199px){
-.overlay{
-width:256px;
-height:143.95px;
-}
-.overlay a{
-margin-top: 72px;
-}
-}
-@media (max-width: 480px){
-.overlay{
-width: 320px;
-height:178.95px;
-}
-.overlay a{
-margin-top: 88px;
-}
 }
