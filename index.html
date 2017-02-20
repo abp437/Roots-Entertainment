@@ -35,44 +35,6 @@
 		<link rel="stylesheet" type="text/css" href="css/homePage.css">
 
 
-<style type="text/css">
-	.child {
-  width: 100%;
-  height: 100%;
-  background-color: black; /* fallback color */
-  background-image: url("images/.jpg");
-  background-position: center;
-  background-size: cover;
-  transition: all .5s;
-}
-
-.parent:hover .child,
-.parent:focus .child {
-  transform: scale(1.2);
-}
-
-
-.child::before {
-  content: "";
-  display: none;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(52, 73, 94, 0.75);
-}
-
-.parent:hover .child:before,
-.parent:focus .child:before {
-  display: block;
-}
-
-
-
-
-</style>
-
 
 
 
@@ -119,6 +81,7 @@
 		<!-- ============ HEADER ENDS HERE ============ -->
 
 
+
 		<!-- ============ CAROUSEL STARTS HERE ============ -->
 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -157,22 +120,33 @@
 
 		<!-- ============ CAROUSEL ENDS HERE ============ -->
 
+
+
 <div class="mainEvents">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class=" parent col-md-4">
-				<div class="child"></div>
+			<div class="col-md-4">
+				<div class="dad">
+					<div class="son"><a href="#">View More</a>
+
+					</div>
+
+				</div>
 			</div>
-			<div class="parent col-md-4">
-				<div class="child"></div>
+			<div class="col-md-4">
+				<div class="dad">
+					<div class="son"><a href="#">View More</a></div>
+				</div>
 			</div>
-			<div class="parent col-md-4">
-				<div class="child"></div>
+			<div class="col-md-4">
+				<div class="dad">
+					<div class="son"><a href="#">View More</a></div>
+				</div>
+			</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 
 
@@ -325,6 +299,11 @@
 				</div>
 			</div>
 		</div>
+
+
+
+
+		
 
 		<!-- ============ FOOTER ENDS HERE ============ -->
 
