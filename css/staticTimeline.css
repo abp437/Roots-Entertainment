@@ -2,6 +2,10 @@
     padding: 60px 0px;
 }
 
+.col-sm-offset-6 {
+    margin-left: 55%;
+}
+
 .staticTimeline .step.team {
     border-top: 0;
     border-top-left-radius: 0;
@@ -80,6 +84,7 @@
 
 .staticTimeline .step.deployment, .staticTimeline .step.integration, .staticTimeline .step.monitor, .staticTimeline .step.continous {
     padding: 25px 40px 25px 50px;
+    margin-top: -2px;
 }
 
 .staticTimeline .step.continous {
@@ -88,12 +93,12 @@
 }
 
 
-/*@media (max-width: 979px) and (min-width: 768px) {
-    .staticTimeline .step {
-        width: 190px;
+@media (max-width: 979px) and (min-width: 768px) {
+    .col-sm-offset-6 {
+        margin-left: 58%;
     }
 }
-*/
+
 
 
 
@@ -103,8 +108,6 @@
 .wrapper {
     margin-left: 0px;
 }
-
-
 
 .staticTimeline .step {
     border-top: 0px;

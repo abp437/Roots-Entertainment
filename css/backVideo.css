@@ -5,7 +5,7 @@
     background-position: top center;
     font-family: 'open_sansregular';
     overflow: hidden;
-    height: 500px;
+    height:625px;
 }
 
 .homepage-video {
@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.videoWrap {
-		height: 405px;
+		height: 435px;
 	}
 }
 
@@ -57,6 +57,11 @@
 
 @media screen and (max-width: 480px) {
 	.videoWrap {
-		height: 152px;
+		height: 182px;
 	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+.videoWrap{
+    height:575px;
+}
 }

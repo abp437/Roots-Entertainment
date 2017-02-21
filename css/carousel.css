@@ -1,0 +1,7 @@
+@media only screen and (max-width: 991px) {
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    	line-height: 1;
+    	height: 400px;
+	}
+}
+
