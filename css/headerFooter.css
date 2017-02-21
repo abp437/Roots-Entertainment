@@ -28,9 +28,10 @@ a, a:hover {
 }
 
 .zIndexer {
-	z-index: 1500;
+	z-index: 15;
 	position: relative;
 }
+
 
 /* ----------- HEADER SECTION ----------- */
 
