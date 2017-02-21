@@ -1,0 +1,26 @@
+.modal-body ul li{
+text-align: center;
+padding: 10px 0;
+border-bottom: 1px dotted #000;
+}
+#zumba{
+z-index:2000;
+}
+#classInfo{
+z-index: 2000;
+}
+#kathak{
+z-index: 2000;
+}
+#folk{
+z-index: 2000;
+}
+#hip{
+z-index: 2000;
+}
+#jazz{
+z-index: 2000;
+}
+#latin{
+z-index: 2000;
+}
