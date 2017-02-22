@@ -1,7 +1,4 @@
-.staticTimeline  {
-    /*padding: 60px 0px;*/
-    padding-top: 60px;
-}
+
 .headtime{
     margin-top: 60px;
 }
@@ -27,11 +24,9 @@
     left: -40px;
     top: -35px;
     z-index: 2;
-    background: url(../images/steps.png) no-repeat 0 0;
+    background: url(../images/rootsSprite.png) no-repeat 0 0;
 }
-.eventTimeline{
-margin-top: 85px;
-}
+
 
 .staticTimeline h1 {
     font-size: 50px;
@@ -97,7 +92,7 @@ margin-top: 85px;
     border-bottom: 0;
     border-bottom-left-radius: 0;
 }
-.staticTimeline .step.right.optimize:after{
+.staticTimeline .step.right.homePageStatic:after{
     border-bottom: 0;
     border-bottom-right-radius:0;
 }
