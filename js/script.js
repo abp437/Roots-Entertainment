@@ -26,19 +26,8 @@ else {
 
 //  ---------------- HEADER COLOUR TRANSITION FUNCTION ENDS ---------------- //
 
-// -----contact us scroll-------//
 
-// $("h1[href='#contact']").scrollTop({duration:500});
-
-// $(".contactusfooter").on("click", function () {
-//    scrolled = scrolled - 300;
-//     $(".contactusfooter").stop().animate({
-//         scrollTop: scrolled
-//     },250);
-// });
 $('h1 .contactusfooter').smoothScroll();
-//$(".contactusfooter").localScroll({duration:800});
-// -----contact us scroll end-------//
 
 
 

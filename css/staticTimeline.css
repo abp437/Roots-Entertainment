@@ -1,5 +1,9 @@
 .staticTimeline  {
-    padding: 60px 0px;
+    /*padding: 60px 0px;*/
+    padding-top: 60px;
+}
+.headtime{
+    margin-top: 60px;
 }
 
 .col-sm-offset-6 {
