@@ -91,6 +91,11 @@ background:#42aab0;
   background-color: transparent;
 }
 
+.hovereffect span {
+  color: #fff;
+  font-size: 18px;
+}
+
 .hovereffect h2:after {
   position: absolute;
   bottom: 0;
