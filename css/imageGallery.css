@@ -12,6 +12,9 @@ width: 100%;
 .eventInfo{
 padding: 20px;
 text-align: center;
+max-width: 360px;
+height: 118px;
+box-sizing: border-box;
 }
 .eventInfo h3{
 margin: 0;
@@ -20,6 +23,7 @@ border-bottom:1px solid #ddd;
 margin-bottom: 10px;
 }
 .eventInfo p{
+height: 63px;
 margin-bottom: 15px;
 }
 .date{
@@ -30,4 +34,23 @@ text-align: center;
 }
 .bottomSpace{
 margin-bottom: 30px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.eventInfo p{
+		height: 63px;
+		overflow-y: scroll;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.eventInfo {
+		padding: 5px 10px;
+	}
+
+	.eventInfo p{
+		height: 78px;
+		overflow-y: scroll;
+	}
 }
