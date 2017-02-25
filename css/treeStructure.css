@@ -117,7 +117,7 @@ a.innerRight:hover {
 
 @media only screen  and  (min-width: 768px) and (max-width:991px){
 
-	.container {
+	.timeLine .container {
 		width: 750px;
 		margin: 0px auto;
 	}
@@ -132,7 +132,7 @@ a.innerRight:hover {
 
 @media only screen  and (min-width:481px) and (max-width: 767px) {
 
-	.container {
+	.timeLine .container {
 		width: 460px;
 		margin: 0px auto;
 	}
@@ -161,7 +161,7 @@ a.innerRight:hover {
 
 @media screen and (max-width: 480px) {
 
-	.container {
+	.timeLine .container {
 		width: 300px;
 		margin: 0px auto;
 	}
