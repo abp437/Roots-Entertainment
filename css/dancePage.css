@@ -1,5 +1,10 @@
 @import url('headerFooter.css');
 @import url('backVideo.css');
-@import url('treeStructure.css');
-@import url('ourStory.css');
 @import url('dancetypes.css');
+@import url('ourStory.css');
+
+.zIndexer {
+    z-index: 10;
+    position: relative;
+    background-color: #fff;
+}

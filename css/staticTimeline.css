@@ -1,22 +1,22 @@
-
-.headtime{
-    margin-top: 60px;
-}
-
 .col-sm-offset-6 {
     margin-left: 55%;
 }
 
-.staticTimeline .step.team {
-    border-top: 0;
-    border-top-left-radius: 0;
+.col-sm-offset-right-6 {
+  margin-right: 50%;
 }
 
-.staticTimeline .step.discover:before {
-    top: 0;
+.staticTimeline>li {
+    position: relative;
+    padding: 20px 40px 40px 50px;
+    border: 1px dashed #cccccc;
+    border-right: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: -2px;
 }
 
-.staticTimeline .step:before {
+.staticTimeline>li:before {
     content: ' ';
     position: absolute;
     width: 77px;
@@ -27,47 +27,18 @@
     background: url(../images/rootsSprite.png) no-repeat 0 0;
 }
 
-
-.staticTimeline h1 {
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: bold;
-    margin-bottom: 35px;
-    color: #555555;
-    text-transform: uppercase;
-}
-.staticTimeline h4 {
-    font-size: 38px;
-    line-height: 50px;
-    font-weight: normal;
-    margin: 0;
-    color: #555555;
+.staticTimeline>li:first-child {
+    border-top: 0;
+    border-top-left-radius: 0;
 }
 
-.staticTimeline p {
-    font-size: 16px;
-    line-height: 26px;
-    color: #555555;
-}
-
-
-
-.staticTimeline .step {
-    position: relative;
-/*    width: 442px;*/
-    padding: 20px 40px 40px 50px;
-    border: 1px dashed #cccccc;
-    border-right: 0;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-
-.staticTimeline .step.right {
+.staticTimeline>li:nth-child(even) {
     padding: 0px 40px 50px 50px;
     border: 0;
+    margin-top: 0px;
 }
 
-.staticTimeline .step.right:after {
+.staticTimeline>li:nth-child(even):after {
     content: ' ';
     position: absolute;
     height: 100%;
@@ -83,72 +54,42 @@
 }
 
 
-.staticTimeline .step.deployment, .staticTimeline .step.integration, .staticTimeline .step.monitor, .staticTimeline .step.continous {
-    padding: 25px 40px 25px 50px;
-    margin-top: -2px;
-}
-
-.staticTimeline .step.continous {
+.staticTimeline>li:last-child {
     border-bottom: 0;
     border-bottom-left-radius: 0;
 }
-.staticTimeline .step.right.homePageStatic:after{
+
+.staticTimeline>li:last-child:after {
     border-bottom: 0;
-    border-bottom-right-radius:0;
+    border-bottom-right-radius: 0;
 }
-@media (max-width: 979px) and (min-width: 768px) {
+
+.staticTimeline h4 {
+    font-size: 38px;
+    line-height: 50px;
+    margin: 0;
+    color: #555555;
+}
+
+.staticTimeline p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
     .col-sm-offset-6 {
         margin-left: 58%;
     }
 }
 
-
-
-
-@media (max-width: 767px){
-
-
-.wrapper {
-    margin-left: 0px;
-}
-
-.staticTimeline .step {
-    border-top: 0px;
-    border-bottom: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    padding: 20px 40px 40px 50px;
-}
-
-.staticTimeline .step.right {
-    /*padding: 0px 40px 50px 50px;*/
-    margin-left: 0px;
-}
-
-.staticTimeline .step.right:after {
-    border-top:none;
-     border-top-right-radius: 0px;
-     border-bottom-right-radius: 0px;
-     border-bottom: none;
-}
-
-
-/*.staticTimeline .step.deployment, .staticTimeline .step.integration, .staticTimeline .step.monitor, .staticTimeline .step.continous {
-    padding: 25px 40px 25px 50px;
-}
-
-.staticTimeline .step.continous {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-}*/
-
-
-
-
-
-
-}
-
-.col-sm-offset-right-6 {
-  margin-right: 50%;
+@media only screen and (max-width: 767px){
+    .staticTimeline>li {
+        border-top: 0px;
+        border-bottom: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin-left: 0px;
+        padding: 20px 0px 40px 50px !important;
+    }
 }

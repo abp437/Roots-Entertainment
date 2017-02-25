@@ -3,11 +3,11 @@
 //  ---------------- HEADER COLOUR TRANSITION FUNCTION ---------------- //
 
 $(document).ready(function(e){
-if ($("nav").hasClass("costumehead")){
+if ($("nav").hasClass("opaqueHeader")){
 	$(".header").css("background-color","rgba(37,41,46,1)");
 }
 else {
-	$(window).scroll(function(){	
+	$(window).scroll(function(){
 		if($(this).scrollTop() > "100"){
 			$(".header").addClass("fixedHeader").css("background-color","rgba(37,41,46,0.4)");
 		}if($(".fixedHeader").scrollTop() > "250"){
@@ -16,7 +16,7 @@ else {
 			$(".fixedHeader").css("background-color","rgba(37,41,46,0.8)");
 		}if($(this).scrollTop() > "350"){
 			$(".fixedHeader").css("background-color","rgba(37,41,46,1)");
-		}if($(this).scrollTop() <= "50"){			
+		}if($(this).scrollTop() <= "50"){
 			$(".fixedHeader").css("background","none").removeClass("fixedHeader");
 		}
 
@@ -26,11 +26,7 @@ else {
 
 //  ---------------- HEADER COLOUR TRANSITION FUNCTION ENDS ---------------- //
 
-
-$('h1 .contactusfooter').smoothScroll();
-
-
-
+$('h1 .contactUsSlider').smoothScroll();
 
 //  ---------------- TOGGLE BUTTON FUNCTION ---------------- //
 
@@ -48,7 +44,7 @@ $(".buttonDesign").on("click",function(){
 });
 
 
-$(".contactusfooter").click(function(){
+$(".contactUsSlider").click(function(){
 		$("body").removeClass("headerMenuActive");
 		$(".navbar-header button").toggleClass("menuActive");
 		$(".navbar-collapse").css("display","none");
@@ -60,28 +56,26 @@ $(".contactusfooter").click(function(){
 //  ---------------- SWIPE FUNCTION ---------------- //
 
 
-  $("#myCarousel").swiperight(function() {  
-	$(this).carousel('prev');  
-	});  
-	$("#myCarousel").swipeleft(function() {  
-	$(this).carousel('next');  
-	});  
+  $("#myCarousel").swiperight(function() {
+	$(this).carousel('prev');
+	});
+	$("#myCarousel").swipeleft(function() {
+	$(this).carousel('next');
+	});
 
 //  ---------------- SWIPE FUNCTION ENDS ---------------- //
 
 //  ---------------- IMAGE GALLERY FUNCTION ---------------- //
 
-$(".event1").colorbox({rel:'event1'});
-	$(".event2").colorbox({rel:'event2'});
-	$(".event3").colorbox({rel:'event3'});
-	
-	$("#click").click(function(){ 
+	$(".eventPhotograph").colorbox({rel:'eventPhotograph'});
+
+	$("#click").click(function(){
 	$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
 	return false;
 	});
 
 	(function ($window) {
-	//Configure colorbox call back to resize with custom dimensions 
+	//Configure colorbox call back to resize with custom dimensions
 	$.colorbox.settings.onLoad = function() {
 	colorboxResize();
 	}
@@ -90,7 +84,7 @@ $(".event1").colorbox({rel:'event1'});
 		var width = "90%";
 		var height = "90%";
 		if($(window).width() > 960) { width = "860" }
-		if($(window).height() > 700) { height = "630" } 
+		if($(window).height() > 700) { height = "630" }
 		$.colorbox.settings.height = height;
 		$.colorbox.settings.width = width;
 		//if window is resized while lightbox open
@@ -99,7 +93,7 @@ $(".event1").colorbox({rel:'event1'});
 			'height': height,
 			'width': width
 			});
-		} 
+		}
 	}
 	//In case of window being resized
 	$(window).resize(function() {
@@ -125,10 +119,10 @@ $(".wear").hide();
 });
 
 if($(window).width() < 768){
-		    $('.Costume').affix({offset: {top: 85} }); 
+		    $('.Costume').affix({offset: {top: 85} });
 
 	}else{
-		    $('.Costume').affix({offset: {top: 110} }); 
+		    $('.Costume').affix({offset: {top: 110} });
 
 	}
 
@@ -138,18 +132,18 @@ if($(window).width() < 768){
 
 
 var btt = $('.backtotop');
-	
+
 	btt.on('click',function(e) {
 		$('html,body').animate({scrollTop:0}, '500');
-		
+
 		e.preventDefault();
 	});
-	
+
 	$(window).on('scroll',function(){
 		var self = $(this),
 			height = self.height(),
 			top = self.scrollTop();
-			
+
 			if(top > height) {
 				if(!btt.is(':visible')) {
 					btt.show();
@@ -157,11 +151,11 @@ var btt = $('.backtotop');
 			} else {
 				btt.hide();
 			}
-	}); 
+	});
 
 	$('.zoom').zoom();
 // 	$('.zoom').zoom({ on:'grab' });
-	// $('.zoom').zoom({ on:'click' });			 
+	// $('.zoom').zoom({ on:'click' });
 // 	// $('.zoom').zoom({ on:'toggle' });
 
 
@@ -171,15 +165,15 @@ var btt = $('.backtotop');
 
 //  ---------------- BACKGROUND VIDEO FUNCTION ---------------- //
 
-var  weboCommanMethod = function(){	
+var  weboCommanMethod = function(){
 	this.setWindowHeight= function (ele){
 		var wHt = $(window).outerHeight(true);
 		$(ele).css("height",wHt);
 		if(ele == ".videoWrap"){
 			$(ele).find(".dispTable").css("height",wHt);
-		}		
+		}
 	}
-}	
+}
 
 var setVideoSize = function (){
 	var $window = $(window),
