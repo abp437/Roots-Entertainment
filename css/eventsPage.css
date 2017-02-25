@@ -2,3 +2,14 @@
 @import url('staticTimeline.css');
 @import url('imageGallery.css');
 @import url('testimonials.css');
+
+.headdingMargin {
+    margin-top: 85px;
+    margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+    .headdingMargin {
+        margin-top: 60px;
+    }
+}

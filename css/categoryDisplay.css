@@ -1,6 +1,3 @@
-@import url('headerFooter.css');
-@import url('navigationPath.css');
-
 .wear li {
 	list-style-type: none;
 	display: inline-block;
@@ -71,8 +68,8 @@ padding-top: 5px;
     visibility:hidden;
     visibility:visible\9;/*For old IE browsers IE6-8 */
 }
-.slideanim.slide {                  
-    visibility: visible;                  
+.slideanim.slide {
+    visibility: visible;
     animation: slide 1s;
 }
 .slideanim::after {
@@ -84,19 +81,19 @@ padding-top: 5px;
     0% {
         opacity: 0;
         transform: translateY(50%);
-    } 
+    }
     100% {
         opacity: 1;
         transform: translateY(0);
-    } 
+    }
 }
 
 .zoom:after {
 			content:'';
-			display:block; 
-			width:33px; 
-			height:33px; 
-			position:absolute; 
+			display:block;
+			width:33px;
+			height:33px;
+			position:absolute;
 			top:0;
 			right:0;
 			background:url(icon.png);
@@ -142,14 +139,10 @@ padding-top: 5px;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-.wear li{
-	width:50%;
+	.wear li {
+		width:50%;
+	}
 }
-
-}
-
-
-
 
 @media only screen and (max-width: 767px) {
 
@@ -194,7 +187,7 @@ padding-top: 5px;
 		background:#303030;
 	}
 
-		.Costume li {
+	.Costume li {
 		display:inline-block;
 	}
 
@@ -205,29 +198,6 @@ padding-top: 5px;
 	nav {
 		background-color: #303030;
 	}
-
-	.Costume .womens:before {
-		content: /*'❤'*/ url(../images/girl.png);
-		
-	}
-	
-	.Costume .mens:before {
-		content: /*'❤'*/ url(../images/boy.png);
-		
-	}
-	.Costume .kids:before {
-		content: /*'❤'*/ url(../images/baby.png);
-		
-	}
-	.Costume .accessories:before {
-		content: /*'❤'*/ url(../images/mask.png);
-		
-	}
-
-	.affix {
-		top:0px;
-		width: 100%;
-	 }
 
 	.fill{
 		padding-right: 0px;

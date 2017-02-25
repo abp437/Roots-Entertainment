@@ -14,28 +14,10 @@ a, a:hover {
 .headding {
 	padding: 40px;
  	font-size: 50px;
-    line-height: 60px;
     font-weight: bold;
     color: #555555;
     text-transform: uppercase;
     text-align: center;
-}
-
-
-
-.headdingMarginal {
-	margin-top: 100px;
-}
-
-.elementDisabled {
-	cursor: default;
-	pointer-events: none;
-}
-
-.zIndexer {
-	z-index: 1500;
-	position: relative;
-	background-color: #fff;
 }
 
 /* ----------- HEADER SECTION ----------- */
@@ -138,7 +120,7 @@ a, a:hover {
 	color: #fff;
 	outline:none;
 	border:0px;
-	background-color:#303030; 
+	background-color:#303030;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -151,7 +133,7 @@ a, a:hover {
 	color: #fff;
 	outline:none;
 	border:0px;
-	background-color:#303030; 
+	background-color:#303030;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -183,7 +165,7 @@ a, a:hover {
 	vertical-align: top;
 }
 
-.contactDescription p {	
+.contactDescription p {
 	display: inline-block;
 	width: 80%;
 }
@@ -214,7 +196,7 @@ a, a:hover {
 }
 
 .socialLinks #facebook,#youtube,#twitter{
-	transition: background-color 0.5s,transform 0.8s 0.5s ease-out;	
+	transition: background-color 0.5s,transform 0.8s 0.5s ease-out;
 }
 
 .socialLinks #facebook:hover{
@@ -243,7 +225,7 @@ a, a:hover {
 /* ----------- FOOTER SECTION ENDS ----------- */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	
+
 	/* ----------- FOOTER SECTION ----------- */
 
 	.socialLinks li {
@@ -308,10 +290,6 @@ a, a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-
-	.headdingMarginal {
-		margin-top: 65px;
-	}
 
 	/* ----------- HEADER SECTION ----------- */
 
@@ -387,18 +365,18 @@ a, a:hover {
 		overflow: hidden;
 		height:100%;
 	}
-	
+
     .buttonDesign {
 	-webkit-transition: .5s ease-in-out;
     -moz-transition: .5s easefile:///L:/Roots/danceAcademy.html-in-out;
     -o-transition: .5s ease-in-out;
-     transition: .5s ease-in-out; 
+     transition: .5s ease-in-out;
 	}
 
 	.buttonDesign span:nth-child(3){
 		top: 11px;
 	}
-	
+
 
    .buttonDesign span{
    	position: absolute;
@@ -407,9 +385,9 @@ a, a:hover {
    	-webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
-     transition: .25s ease-in-out; 
+     transition: .25s ease-in-out;
    }
-   
+
    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
    	background-color: transparent;
    }
@@ -418,7 +396,7 @@ a, a:hover {
    }
 
    .menuActive  span:nth-child(2) {
-    opacity: 0; 
+    opacity: 0;
     left: -60px;
   	}
 	.menuActive  span:nth-child(3) {
@@ -434,12 +412,6 @@ a, a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-	.headdingMarginal {
-		max-width: 320px;
-		margin: 0px auto;
-		margin-top: 65px;
-	}
-
 	.contactDescription p {
 		width: 80%;
 		font-size: 15px;
