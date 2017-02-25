@@ -77,6 +77,12 @@
     color: #555555;
 }
 
+.eventCategory>li {
+    line-height: 30px;
+    font-size: 18px;
+    list-style-type: disc;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .col-sm-offset-6 {
         margin-left: 58%;

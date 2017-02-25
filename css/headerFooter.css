@@ -7,7 +7,7 @@ body {
 	font-size: 14px;
 }
 
-a, a:hover {
+a, a:hover, a:active, a:focus {
 	text-decoration: none;
 }
 
@@ -168,6 +168,7 @@ a, a:hover {
 .contactDescription p {
 	display: inline-block;
 	width: 80%;
+	font-size: 15px;
 }
 
 .socialLinks ul {
@@ -199,17 +200,17 @@ a, a:hover {
 	transition: background-color 0.5s,transform 0.8s 0.5s ease-out;
 }
 
-.socialLinks #facebook:hover{
+.socialLinks #facebook {
 	background-color: #3b5998;
-	transform: rotate(360deg);
+	color: #FFFFFF;
 }
-.socialLinks #youtube:hover{
+.socialLinks #youtube {
 	background-color: #cc181e;
-	transform: rotate(360deg);
+	color: #FFFFFF;
 }
-.socialLinks #twitter:hover{
+.socialLinks #twitter {
 	background-color: #1da1f2;
-	transform: rotate(360deg);
+	color: #FFFFFF;
 }
 .footer2{
 	background-color: #262626;
@@ -338,7 +339,7 @@ a, a:hover {
 
 	.contactDescription p {
 		width: 88%;
-		font-size: 15px;
+		font-size: 17px;
 	}
 
 	.socialLinks ul {
@@ -414,7 +415,7 @@ a, a:hover {
 @media only screen and (max-width: 480px) {
 	.contactDescription p {
 		width: 80%;
-		font-size: 15px;
+		font-size: 16px;
 	}
 
 	.footer2 p{

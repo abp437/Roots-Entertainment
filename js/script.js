@@ -7,17 +7,18 @@ if ($("nav").hasClass("opaqueHeader")){
 	$(".header").css("background-color","rgba(37,41,46,1)");
 }
 else {
+	$(".header").css("background-color","rgba(37,41,46,0.4)");
 	$(window).scroll(function(){
 		if($(this).scrollTop() > "100"){
-			$(".header").addClass("fixedHeader").css("background-color","rgba(37,41,46,0.4)");
+			$(".header").addClass("fixedHeader").css("background-color","rgba(37,41,46,0.6)");
 		}if($(".fixedHeader").scrollTop() > "250"){
-			$(".fixedHeader").css("background-color","rgba(37,41,46,0.6)");
+			$(".fixedHeader").css("background-color","rgba(37,41,46,0.7)");
 		}if($(this).scrollTop() > "300"){
 			$(".fixedHeader").css("background-color","rgba(37,41,46,0.8)");
 		}if($(this).scrollTop() > "350"){
 			$(".fixedHeader").css("background-color","rgba(37,41,46,1)");
 		}if($(this).scrollTop() <= "50"){
-			$(".fixedHeader").css("background","none").removeClass("fixedHeader");
+			$(".fixedHeader").css("background-color","rgba(37,41,46,0.4)").removeClass("fixedHeader");
 		}
 
 });
