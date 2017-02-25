@@ -1,50 +1,61 @@
-.carousel-indicators{
-bottom: 0;
+.carousel-indicators {
+    bottom: 0;
 }
-.carousel{
-margin-bottom: 40px;
+
+.carousel {
+    margin-bottom: 40px;
 }
-#tcb-testimonial-carousel a{
-        color: #b20000;
-    }
-#tcb-testimonial-carousel  .text-brand{
-        color:#b20000;
-    }
+
+#tcb-testimonial-carousel a {
+    color: #b20000;
+}
+
+#tcb-testimonial-carousel  .text-brand {
+    color:#b20000;
+}
+
 #tcb-testimonial-carousel .carousel-indicators .active {
-        background:#b20000;
-    }
-#tcb-testimonial-carousel .no-margin{
-        margin: 0;
-    }
+    background:#b20000;
+}
+
+#tcb-testimonial-carousel .no-margin {
+    margin: 0;
+}
+
 #tcb-testimonial-carousel .carousel-indicators li {
-        border: 1px solid #ccc;
-    }
+    border: 1px solid #ccc;
+}
+
 #tcb-testimonial-carousel .carousel-control {
-        color: #b20000;
-        width: 5%;
-    }
+    color: #b20000;
+    width: 5%;
+}
+
 #tcb-testimonial-carousel .carousel-control:hover,
 #tcb-testimonial-carousel .carousel-control:focus {
-        color: #b20000;
-    }
+    color: #b20000;
+}
+
 #tcb-testimonial-carousel .carousel-control.left,
 #tcb-testimonial-carousel .carousel-control.right {
-        background-image: none;
-    }
-#tcb-testimonial-carousel .item{
-        padding: 15px 40px;
-        background: #f8f8f8;
-    }
+    background-image: none;
+}
+
+#tcb-testimonial-carousel .item {
+    padding: 15px 40px;
+    background: #f8f8f8;
+}
+
 #tcb-testimonial-carousel .media-object {
-        margin: auto;
-    }
+    margin: auto;
+}
 
 @media screen and (max-width: 767px) {
     .media-object {
         margin-bottom: 15px;
     }
 
-    #tcb-testimonial-carousel .item{
+    #tcb-testimonial-carousel .item {
         padding: 15px 40px;
         width: 100%;
         height: 300px;
@@ -56,4 +67,3 @@ margin-bottom: 40px;
         overflow-y: scroll;
     }
 }
-

@@ -88,25 +88,22 @@ padding-top: 5px;
     }
 }
 
-.zoom:after {
-			content:'';
-			display:block;
-			width:33px;
-			height:33px;
-			position:absolute;
-			top:0;
-			right:0;
-			background:url(icon.png);
-		}
+	.zoom:before {
+		content:'';
+		display:block;
+		width:33px;
+		height:33px;
+		position:absolute;
+		top: 5px;
+	    right: 15px;
+		background:url(../images/icon.png);
+	}
 
-		.zoom img {
-			display: block;
-		}
+	.zoom img {
+		display: block;
+	}
 
-		.zoom img::selection { background-color: transparent; }
-
-		.zoom img:hover { cursor: url(images/grab.cur), default; }
-		.zoom img:active { cursor: url(images/grabbed.cur), default; }
+	.zoom img::selection { background-color: transparent; }
 
 /* --------------- MEDIA QUERIES --------------- */
 
