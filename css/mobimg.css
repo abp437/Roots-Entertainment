@@ -1,0 +1,16 @@
+.mobimg{
+display: none;
+}
+.mobimg img {
+		width: 100%;
+	}
+
+@media screen and (max-width: 767px) {
+	.mobimg{
+		display: block;
+	}
+.mobimg img {
+		height: 300px;
+	}
+}
+

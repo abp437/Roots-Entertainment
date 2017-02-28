@@ -52,17 +52,20 @@
 @media screen and (max-width: 767px) {
 	.videoWrap {
 		height: 320px;
+        display: none;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.videoWrap {
 		height: 182px;
+        display: none;
 	}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .videoWrap{
         height:575px;
+        display: none;
     }
 }
