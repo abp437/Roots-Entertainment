@@ -2,7 +2,7 @@
 @import url('backVideo.css');
 @import url('danceTypes.css');
 @import url('ourStory.css');
-
+@import url('mobimg.css');
 .zIndexer {
     z-index: 10;
     position: relative;
