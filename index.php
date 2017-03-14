@@ -10,13 +10,8 @@ require 'PHPMailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
-$mail->isSMTP();                                   // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com;smtp.mail.yahoo.com;smtp.live.com';                    // Specify main and backup SMTP servers such as gmail,yahoo,hotmail.
-$mail->SMTPAuth = true;                            // Enable SMTP authentication
-$mail->Username = 'rootsentertain@gmail.com';          // SMTP username
-$mail->Password = 'rootsentertainment'; // SMTP password
-$mail->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                 // TCP port to connect to
+$mail->isSMTP();                                // Set mailer to use SMTP
+
 
 $mail->setFrom('rootsentertain@gmail.com', 'RootsEntertainment');
 // $mail->addReplyTo('rootsentertain@gmail.com', 'RootsEntertainment');
@@ -43,12 +38,6 @@ if(!$mail->send()) {
 $mail1 = new PHPMailer;
 
 $mail1->isSMTP();                                   // Set mailer to use SMTP
-$mail1->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
-$mail1->SMTPAuth = true;                            // Enable SMTP authentication
-$mail1->Username = 'rootsentertain@gmail.com';          // SMTP username
-$mail1->Password = 'rootsentertainment'; // SMTP password
-$mail1->SMTPSecure = 'ssl';                         // Enable TLS encryption, `ssl` also accepted
-$mail1->Port = 465; 
 
 
 $mail1->setFrom('$email','$name');
